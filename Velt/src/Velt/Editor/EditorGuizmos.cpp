@@ -69,7 +69,6 @@ namespace Velt::Editor
 				// 0x3F800000 is the clear color represented by float 1.0f
 				if (id == 0xFFFFFFFF || id == 0x3F800000 && !m_SelectedEntity)
 					m_SelectedEntity = { (entt::entity)id, m_SceneContext.get() };  // entt::null is equal to 0xFFFFFFFF / std::numeric_limits<uint32_t> so only needed for 0x3F800000
-				if (id == 0xFFFFFFFF || id == 0x3F800000 && m_SelectedEntity) {}
 				else
 					m_SelectedEntity = { (entt::entity)id, m_SceneContext.get() };
 				
